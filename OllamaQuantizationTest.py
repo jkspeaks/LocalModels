@@ -1,3 +1,5 @@
+# Courtesy: ChatGPT
+
 import time
 from ollama import Client
 
@@ -37,3 +39,4 @@ for m in models_to_test:
         benchmark(m)
     except Exception as e:
         print(f"Skipping {m} (not installed): {e}")
+
