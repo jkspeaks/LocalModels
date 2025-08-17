@@ -1,3 +1,5 @@
+# Courtesy: Claude Sonnet 4
+
 import torch
 import intel_extension_for_pytorch as ipex
 
@@ -30,4 +32,5 @@ if torch.xpu.is_available():
     x = torch.randn(5, 10).to(device)
     output = model(x)
     print(f"Model output shape: {output.shape}")
+
     print("Successfully ran model on XPU device!")
